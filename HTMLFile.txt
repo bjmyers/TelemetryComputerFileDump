@@ -1,0 +1,139 @@
+<h2>Rockets</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/2-TheOff-planeGratingRocket-207te8v.pdf">
+TheOff-planeGratingRocket</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/7-An-introduction-to-the-water-recovery-x-ray-rocket-1wczohv.pdf">
+An introduction to the water recovery x-ray rocket</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/36-First-results-from-the-OGRESS-sounding-rocket-payload-yorz7q.pdf">
+First results from the OGRESS sounding rocket payload</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/54-Pushing-the-boundaries-of-x-ray-grating-spectroscopy-in-a-suborbital-rocket-trz2d4.pdf">
+Pushing the boundaries of x-ray grating spectroscopy in a suborbital rocket</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/55-The-OGRESS-sounding-rocket-payload-zq6d2d.pdf">
+The OGRESS sounding rocket payload</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/77-A-suborbital-payload-for-soft-X-ray-spectroscopy-of-extended-sources-20rnovk.pdf">
+A suborbital payload for soft X-ray spectroscopy of extended sources</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/78-The-CODEX-sounding-rocket-payload-26wjpxg.pdf">
+The CODEX sounding rocket payload</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/88-Results-from-the-Extended-X-ray-Off-plane-Spectrometer-EXOS-sounding-rocket-payload-2kzin6c.pdf">
+Results from the Extended X-ray Off-plane Spectrometer (EXOS) sounding rocket payload</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/97-The-EXOS-sounding-rocket-payload-1o4ho1l.pdf">
+The EXOS sounding rocket payload</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/109-A-sounding-rocket-payload-for-x-ray-observations-of-the-Cygnus-Loop-2jno2z2.pdf">
+A sounding rocket payload for x-ray observations of the Cygnus Loop</a><br>
+<h2>Space Missions</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/6-LynxMissionconceptstatus-2bon6n4.pdf">
+LynxMissionconceptstatus</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/8-Arcus-exploring-the-formation-and-evolution-of-clusters-galaxies-and-stars-z2qij9.pdf">
+Arcus exploring the formation and evolution of clusters galaxies and stars</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/18-Miniaturized-X-ray-telescope-for-VZLUSAT-1-nanosatellite-1j4s1q6.pdf">
+Miniaturized X-ray telescope for VZLUSAT-1 nanosatellite</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/22-The-evolution-of-structure-andfeedback-with-Arcus-13ol1pp.pdf">
+The evolution of structure andfeedback with Arcus</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/24-Arcus-the-x-ray-grating-spectrometer-explorer-20vl2yv.pdf">
+Arcus the x-ray grating spectrometer explorer</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/37-The-X-ray-Surveyor-Mission-a-concept-study-27smduu.pdf">
+The X-ray Surveyor Mission a concept study</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/46-Arcus-an-ISS-attached-high-resolution-x-ray-grating-spectrometer-1bhde87.pdf">
+Arcus an ISS-attached high-resolution x-ray grating spectrometer</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/66-Concepts-for-high-performance-soft-X-ray-grating-spectroscopy-in-a-moderate-scale-mission-tc314t.pdf">
+Concepts for high-performance soft X-ray grating spectroscopy in a moderate-scale mission</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/71-Development-of-off-plane-gratings-for-WHIMex-and-IXO-2ijbr4y.pdf">
+Development of off-plane gratings for WHIMex and IXO</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/72-X-ray-optics-for-WHIMex-the-Warm-Hot-Intergalactic-Medium-Explorer-yyday2.pdf">
+X-ray optics for WHIMex the Warm Hot Intergalactic Medium Explorer</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/74-The-Warm-Hot-Intergalactic-Medium-Explorer-WHIMex-mission-tly8yc.pdf">
+The Warm-Hot Intergalactic Medium Explorer (WHIMex) mission</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/84-Off-plane-x-ray-grating-spectrometer-camera-for-IXO-u30xjw.pdf">
+Off-plane x-ray grating spectrometer camera for IXO</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/87-A-tower-concept-for-the-off-plane-x-ray-grating-spectrometer-for-the-International-X-ray-Observatory-1tgff28.pdf">
+A tower concept for the off-plane x-ray grating spectrometer for the International X-ray Observatory</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/89-Developments-of-the-off-plane-x-ray-grating-spectrometer-for-IXO-1rqmgyx.pdf">
+Developments of the off-plane x-ray grating spectrometer for IXO</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/98-Off-plane-grating-spectrometer-for-the-International-X-ray-Observatory-tiqqdm.pdf">
+Off-plane grating spectrometer for the International X-ray Observatory</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/102-Generation-X-Grating-Array-Technology-Development-22o50cl.pdf">
+Generation-X Grating Array Technology Development</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/105-Off-plane-reflection-gratings-for-Constellation-X-2e5dc0h.pdf">
+Off-plane reflection gratings for Constellation-X</a><br>
+<h2>Grating Fabrication</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/25-New-lithographic-techniques-for-x-ray-spectroscopy-2gmxvep.pdf">
+New lithographic techniques for x-ray spectroscopy</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/32-Off-plane-x-ray-reflection-grating-fabrication-1yyi0rn.pdf">
+Off-plane x-ray reflection grating fabrication</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/108-Studies-in-thin-diffraction-gratings-for-flight-applications-1be5ja1.pdf">
+Studies in thin diffraction gratings for flight applications</a><br>
+<h2>Grating Testing</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/1-GratingDesignForTheWaterRecoveryXRayRocket-1ksbtr1.pdf">
+GratingDesignForTheWaterRecoveryXRayRocket</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/5-ThesimulatedspectrumoftheOGREX-rayEM-CCD-2bpulft.pdf">
+ThesimulatedspectrumoftheOGREX-rayEM-CCD</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/27-Line-spread-functions-of-blazed-off-plane-gratings-operated-in-the-Littrow-mounting-1c4px3o.pdf">
+Line spread functions of blazed off-plane gratings operated in the Littrow mounting</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/30-Performance-testing-of-an-off-plane-reflection-grating-and-silicon-pore-optic-spectrograph-at-PANTER-10b44jm.pdf">
+Performance testing of an off-plane reflection grating and silicon pore optic spectrograph at PANTER</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/31-Polarization-sensitivity-testing-of-off-plane-reflection-gratings-2j5000w.pdf">
+Polarization sensitivity testing of off-plane reflection gratings</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/33-Diffraction-efficiency-of-radially-profiled-off-plane-reflection-gratings-223obdv.pdf">
+Diffraction efficiency of radially-profiled off-plane reflection gratings</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/39-Performance-testing-of-a-novel-off-plane-reflection-grating-and-silicon-pore-optic-spectrograph-at-PANTER-11uzb2g.pdf">
+Performance testing of a novel off-plane reflection grating and silicon pore optic spectrograph at PANTER</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/57-First-results-from-a-next-generation-off-plane-X-ray-diffraction-grating-1v2n00f.pdf">
+First results from a next-generation off-plane X-ray diffraction grating</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/86-X-ray-resolution-tests-of-an-off-plane-reflection-grating-for-IXO-24o0tl1.pdf">
+X-ray resolution tests of an off-plane reflection grating for IXO</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/100-A-high-resolution-x-ray-spectrometer-utilizing-Kirkpatrick-Baez-optics-and-off-plane-gratings-11zovza.pdf">
+A high resolution x-ray spectrometer utilizing Kirkpatrick-Baez optics and off-plane gratings</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/104-Thin-substrate-grating-array-for-sounding-rocket-and-satellite-payloads-1ohmfj1.pdf">
+Thin substrate grating array for sounding rocket and satellite payloads</a><br>
+<h2>Grating Alignment</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/34-Optical-and-x-ray-alignment-approaches-for-off-plane-reflection-gratings-1w0pgsk.pdf">
+Optical and x-ray alignment approaches for off-plane reflection gratings</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/52-Analytical-alignment-tolerances-for-off-plane-reflection-20nflu7.pdf">
+Analytical alignment tolerances for off-plane reflection</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/53-Alignment-tolerances-for-off-plane-reflection-grating-spectroscopy-theoretical-calculations-and-laboratory-techniques-1set2b5.pdf">
+Alignment tolerances for off-plane reflection grating spectroscopy theoretical calculations and laboratory techniques</a><br>
+<h2>Optics</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/3-OpticaldesignoftheOff-planeGratingRocketExperiment-1ckbqy2.pdf">
+OpticaldesignoftheOff-planeGratingRocketExperiment</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/14-X-ray-Lobster-Eye-all-sky-monitor-for-1htoxmi.pdf">
+X-ray Lobster Eye all-sky monitor for</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/23-Optical-design-considerations-and-raytracing-results-for-the-Arcus-grating-spectrometer-concept-1m9f52j.pdf">
+Optical design considerations and raytracing results for the Arcus grating spectrometer concept</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/79-Compact-optics-for-high-resolution-spectroscopy-of-celestial-x-ray-sources-r79y8q.pdf">
+Compact optics for high resolution spectroscopy of celestial x-ray sources</a><br>
+<h2>Detectors</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/15-Gaseous-electron-multiplier-gain-characteristics-using-low-pressure-ArCO2-15x00vo.pdf">
+Gaseous electron multiplier gain characteristics using low-pressure ArCO2</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/21-Development-of-the-x-ray-camera-for-the-OGRE-sub-orbital-rocket-2juoacj.pdf">
+Development of the x-ray camera for the OGRE sub-orbital rocket</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/35-Technological-developments-of-the-OGRE-focal-plane-array-2hkyhax.pdf">
+Technological developments of the OGRE focal plane array</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/45-Developments-in-the-EM-CCD-camera-for-OGRE-2g0oqln.pdf">
+Developments in the EM-CCD camera for OGRE</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/67-The-use-of-CCDs-and-EM-CCDs-for-future-soft-x-ray-spectrometers-177nn3o.pdf">
+The use of CCDs and EM-CCDs for future soft x-ray spectrometers</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/73-The-use-of-EM-CCDs-on-high-resolution-soft-x-ray-spectrometers-10lolnb.pdf">
+The use of EM-CCDs on high resolution soft x-ray spectrometers</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/85-A-study-of-electron-multiplying-CCDs-for-use-on-the-International-X-ray-Observatory-off-plane-x-ray-grating-spectrometer-r4fq3j.pdf">
+A study of electron-multiplying CCDs for use on the International X-ray Observatory off-plane x-ray grating spectrometer</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/99-CCD-readout-for-the-IXO-off-plane-grating-spectrometer-2ftqy5h.pdf">
+CCD readout for the IXO off-plane grating spectrometer</a><br>
+<h2>Telemetry</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/38-A-primer-for-telemetry-interfacing-in-accordance-with-NASA-standards-using-low-cost-FPGAs-1cd1sdb.pdf">
+A primer for telemetry interfacing in accordance with NASA standards using low cost FPGAs</a><br>
+<h2>X-Ray Observations</h2><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/40-X-RAY-SPECTROSCOPY-OF-POTENTIAL-SMALL-MAGELLANIC-CLOUD-TYPE-Ia-2a2zm4n.pdf">
+X-RAY SPECTROSCOPY OF POTENTIAL SMALL MAGELLANIC CLOUD TYPE Ia</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/42-HFPK-334-AN-UNUSUAL-SUPERNOVA-REMNANT-IN-THE-SMALL-MAGELLANIC-CLOUD-1dotdy6.pdf">
+HFPK 334 AN UNUSUAL SUPERNOVA REMNANT IN THE SMALL MAGELLANIC CLOUD</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/50-A-MULTI-WAVELENGTH-LOOK-AT-THE-YOUNG-PLERIONIC-SUPERNOVA-REMNANT-0540-69.3-1yq5g8x.pdf">
+A MULTI-WAVELENGTH LOOK AT THE YOUNG PLERIONIC SUPERNOVA REMNANT 0540-69.3</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/56-A-NEW-X-RAY-VIEW-OF-THE-SUPERNOVA-REMNANT-G272.2âˆ’3.2-AND-ITS-ENVIRONMENT-1g0i157.pdf">
+A NEW X-RAY VIEW OF THE SUPERNOVA REMNANT G272.2−3.2 AND ITS ENVIRONMENT</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/61-SOFT-X-RAY-SPECTROSCOPY-OF-THE-CYGNUS-LOOP-SUPERNOVA-REMNANT-xydvh3.pdf">
+SOFT X-RAY SPECTROSCOPY OF THE CYGNUS LOOP SUPERNOVA REMNANT</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/68-SNR-0453-68.5-AN-ASYMMETRIC-REMNANT-AND-ITS-PLERION-IN-THE-LARGE-MAGELLANIC-CLOUD-29xrbvj.pdf">
+SNR 0453-68.5 AN ASYMMETRIC REMNANT AND ITS PLERION IN THE LARGE MAGELLANIC CLOUD</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/81-CHANDRA-IMAGING-AND-SPECTROSCOPY-OF-THE-EASTERN-XA-REGION-OF-THE-CYGNUS-LOOP-SUPERNOVA-REMNANT-2ocz9i3.pdf">
+CHANDRA IMAGING AND SPECTROSCOPY OF THE EASTERN XA REGION OF THE CYGNUS LOOP SUPERNOVA REMNANT</a><br>
+<a href="https://sites.psu.edu/mcentaffergroup/files/2018/09/106-Soft-X-Ray-Spectroscopy-of-the-Cygnus-Loop-Supernova-Remnant-1osufij.pdf">
+Soft X-Ray Spectroscopy of the Cygnus Loop Supernova Remnant</a><br>

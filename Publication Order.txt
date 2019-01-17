@@ -1,0 +1,80 @@
+﻿Highlighted: 1,2,4,26,27,40,50,57
+
+
+@Rockets
+2-TheOff-planeGratingRocket 2018
+7-An introduction to the water recovery x-ray rocket 2017
+36-First results from the OGRESS sounding rocket payload 2015
+54-Pushing the boundaries of x-ray grating spectroscopy in a suborbital rocket 2013
+55-The OGRESS sounding rocket payload 2013
+77-A suborbital payload for soft X-ray spectroscopy of extended sources 2011
+78-The CODEX sounding rocket payload 2011
+88-Results from the Extended X-ray Off-plane Spectrometer (EXOS) sounding rocket payload 2010
+97-The EXOS sounding rocket payload 2009
+109-A sounding rocket payload for x-ray observations of the Cygnus Loop 2006 -NOT USING
+@Space Missions
+6-LynxMissionconceptstatus 2017
+8-Arcus exploring the formation and evolution of clusters galaxies and stars 2017
+18-Miniaturized X-ray telescope for VZLUSAT-1 nanosatellite 2016
+22-The evolution of structure andfeedback with Arcus 2016
+24-Arcus the x-ray grating spectrometer explorer 2016
+37-The X-ray Surveyor Mission a concept study 2015
+46-Arcus an ISS-attached high-resolution x-ray grating spectrometer 2014
+66-Concepts for high-performance soft X-ray grating spectroscopy in a moderate-scale mission 2012
+71-Development of off-plane gratings for WHIMex and IXO 2011
+72-X-ray optics for WHIMex the Warm Hot Intergalactic Medium Explorer 2011
+74-The Warm-Hot Intergalactic Medium Explorer (WHIMex) mission 2011
+84-Off-plane x-ray grating spectrometer camera for IXO 2010
+87-A tower concept for the off-plane x-ray grating spectrometer for the International X-ray Observatory 2010
+89-Developments of the off-plane x-ray grating spectrometer for IXO 2010
+98-Off-plane grating spectrometer for the International X-ray Observatory 2009
+102-Generation-X Grating Array Technology Development 2009
+105-Off-plane reflection gratings for Constellation-X 2008
+@Grating Fabrication
+25-New lithographic techniques for x-ray spectroscopy 2016
+32-Off-plane x-ray reflection grating fabrication 2015
+108-Studies in thin diffraction gratings for flight applications 2006 - NOT USED
+@Grating Testing
+1-GratingDesignForTheWaterRecoveryXRayRocket 2018
+5-ThesimulatedspectrumoftheOGREX-rayEM-CCD 2017
+27-Line spread functions of blazed off-plane gratings operated in the Littrow mounting 2016
+30-Performance testing of an off-plane reflection grating and silicon pore optic spectrograph at PANTER 2015
+31-Polarization sensitivity testing of off-plane reflection gratings 2015
+33-Diffraction efficiency of radially-profiled off-plane reflection gratings 2015
+39-Performance testing of a novel off-plane reflection grating and silicon pore optic spectrograph at PANTER 2015 - NOT USED
+57-First results from a next-generation off-plane X-ray diffraction grating 2013
+86-X-ray resolution tests of an off-plane reflection grating for IXO 2010
+100-A high resolution x-ray spectrometer utilizing Kirkpatrick-Baez optics and off-plane gratings 2009
+104-Thin substrate grating array for sounding rocket and satellite payloads 2008
+@Grating Alignment
+34-Optical and x-ray alignment approaches for off-plane reflection gratings 2015
+52-Analytical alignment tolerances for off-plane reflection 2013
+53-Alignment tolerances for off-plane reflection grating spectroscopy theoretical calculations and laboratory techniques 2013
+@Optics
+3-OpticaldesignoftheOff-planeGratingRocketExperiment 2018
+14-X-ray Lobster Eye all-sky monitor for 2017
+23-Optical design considerations and raytracing results for the Arcus grating spectrometer concept 2016
+79-Compact optics for high resolution spectroscopy of celestial x-ray sources 2011
+@Detectors
+15-Gaseous electron multiplier gain characteristics using low-pressure ArCO2 2017
+21-Development of the x-ray camera for the OGRE sub-orbital rocket 2016
+35-Technological developments of the OGRE focal plane array 2015
+45-Developments in the EM-CCD camera for OGRE 2014
+67-The use of CCDs and EM-CCDs for future soft x-ray spectrometers 2012
+73-The use of EM-CCDs on high resolution soft x-ray spectrometers 2011
+85-A study of electron-multiplying CCDs for use on the International X-ray Observatory off-plane x-ray grating spectrometer 2010
+99-CCD readout for the IXO off-plane grating spectrometer 2009
+@Telemetry
+38-A primer for telemetry interfacing in accordance with NASA standards using low cost FPGAs 2015
+@X-Ray Observations
+40-X-RAY SPECTROSCOPY OF POTENTIAL SMALL MAGELLANIC CLOUD TYPE Ia 2015
+42-HFPK 334 AN UNUSUAL SUPERNOVA REMNANT IN THE SMALL MAGELLANIC CLOUD 2014
+50-A MULTI-WAVELENGTH LOOK AT THE YOUNG PLERIONIC SUPERNOVA REMNANT 0540-69.3 2013
+56-A NEW X-RAY VIEW OF THE SUPERNOVA REMNANT G272.2−3.2 AND ITS ENVIRONMENT 2013
+61-SOFT X-RAY SPECTROSCOPY OF THE CYGNUS LOOP SUPERNOVA REMNANT 2013
+68-SNR 0453-68.5 AN ASYMMETRIC REMNANT AND ITS PLERION IN THE LARGE MAGELLANIC CLOUD 2012
+81-CHANDRA IMAGING AND SPECTROSCOPY OF THE EASTERN XA REGION OF THE CYGNUS LOOP SUPERNOVA REMNANT 2011
+106-Soft X-Ray Spectroscopy of the Cygnus Loop Supernova Remnant 2008
+
+
+
