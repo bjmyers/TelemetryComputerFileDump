@@ -20,7 +20,7 @@ def propagate(posns,dist,islopes=[]):
     
     returns - a list of the new groove positions
     '''
-    return posns + islopes*dist
+    return posns - islopes*dist
 
 def fracture(posns,nearest=0.3):
     '''
@@ -39,40 +39,44 @@ To calculate the separation between grooves, use np.diff(posns)
 
 ## Constants
 num = 1000     # Number of grooves
-init_sep = 13   # Initial separation of grooves in nm
-focus = 1e10    # Distance to focus in nm
-prop_dist = 1  # Distance we want to propagate grooves before fracturing them, in number of 3 Angstroms blocks
+init_sep = 160   # Initial separation of grooves in nm
+focus = .33e10    # Distance to focus in nm
+inner_rad = 165
+outer_rad = 189.7
+
 
 
 
 ## Code:
 
-# Plots the number of unique separations at different propogation values
-indexes = np.arange(num)
-posns = ((init_sep) * indexes).astype(np.float64)
-isl = islope(posns,focus)
+## Plots the number of unique separations at different propogation values
+# indexes = np.arange(num)
+# posns = ((init_sep) * indexes).astype(np.float64)
+# isl = islope(posns,focus)
+# 
+# seps = []
+# n = 5000
+# for i in tqdm(range(n),desc='Propogating Grooves'):
+#     
+#     newposns = (fracture(posns))
+#     
+#     newposns = propagate(newposns, 0.3 * i, isl)
+#     
+#     newposns = fracture(newposns)
+#     sep = np.diff(newposns)
+#     
+#     sep = fracture(sep,0.1)
+#     
+#     seps.append(len(np.unique(sep)))
+# 
+# 
+# plt.figure()
+# plt.scatter(np.arange(n),np.array(seps))
+# plt.show()
 
-seps = []
-n = 5000
-for i in tqdm(range(n),desc='Propogating Grooves'):
-    
-    newposns = (fracture(posns))
-    
-    newposns = propagate(newposns, 0.3 * i, isl)
-    
-    newposns = fracture(newposns)
-    sep = np.diff(newposns)
-    
-    sep = fracture(sep,0.1)
-    
-    seps.append(len(np.unique(sep)))
-
-
-plt.figure()
-plt.scatter(np.arange(n),np.array(seps))
-plt.show()
-
-# Plots the positions of the grooves over several propogation values
+## Plots the positions of the grooves over several propogation values
+# num = 10
+# focus = 1
 # indexes = np.arange(num)
 # posns = ((init_sep) * indexes).astype(np.float64)
 # isl = islope(posns,focus)
@@ -93,6 +97,26 @@ plt.show()
 # plt.scatter(xs,ys)
 # plt.show()
     
+## Propogate the entire grating
+indexes = np.arange(num)
+posns = ((init_sep) * indexes).astype(np.float64)
+isl = islope(posns,focus)
+
+newposns = posns
+
+newposns = propagate(newposns, 1e8, isl)
+
+error = np.random.normal(30,5,(num))
+newposns += error
+
+newposns = fracture(newposns)
+sep = np.diff(newposns)
+
+# sep = fracture(sep,0.1)
+
+plt.figure()
+plt.hist(sep)
+plt.show()
 
 
 
