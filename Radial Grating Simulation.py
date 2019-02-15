@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 from tqdm import tqdm
 
 ## Functions
@@ -98,36 +99,67 @@ outer_rad = 189.7
 # plt.show()
     
 ## Propogate the entire grating
+# indexes = np.arange(num)
+# posns = ((init_sep) * indexes).astype(np.float64)
+# isl = islope(posns,focus)
+# 
+# newposns = posns
+# 
+# newposns = propagate(newposns, 1e8, isl)
+# 
+# error = np.random.normal(30,5,(num))
+# newposns += error
+# 
+# newposns = fracture(newposns)
+# sep = np.diff(newposns)
+# 
+# 
+# plt.figure()
+# plt.hist(sep)
+# plt.show()
+
+
+## Plot average separation as a function of position
+means = []   
 indexes = np.arange(num)
 posns = ((init_sep) * indexes).astype(np.float64)
 isl = islope(posns,focus)
 
-newposns = posns
+xs = np.arange(0,int(1e8),int(1e5))
+for i in xs:
+    newposns = propagate(posns,i*0.3,isl)
+    newposns = fracture(newposns)
+    means.append(np.mean(np.diff(newposns)))
 
-newposns = propagate(newposns, 1e8, isl)
-
-error = np.random.normal(30,5,(num))
-newposns += error
-
-newposns = fracture(newposns)
-sep = np.diff(newposns)
-
-# sep = fracture(sep,0.1)
-
-plt.figure()
-plt.hist(sep)
+fig, ax1 = plt.subplots()
+ax1.scatter(xs,means)
+ax1.set_xlabel('Displacement (nm)')
+ax1.set_ylabel('Mean Separation (nm)')
+fig.tight_layout()
 plt.show()
+    
+    
+## Plot standard deviation of separation as a function of position
+devs = []
+indexes = np.arange(num)
+posns = ((init_sep) * indexes).astype(np.float64)
+isl = islope(posns,focus)
 
+xs = np.arange(0,int(1e8),int(1e5))
+for i in xs:
+    newposns = propagate(posns,i*0.3,isl)
+    newposns = fracture(newposns)
+    devs.append(np.std(np.diff((newposns))))
+    
+devs = np.array(devs)
+devs /= .3
+fig, ax1 = plt.subplots()
+ax1.scatter(xs,devs,color='r')
+ax1.set_ylabel('Standard Deviation of Separations (blocks)')
+ax1.set_xlabel('Displacement (nm)')
 
-
-    
-    
-    
-    
-    
-    
-    
-    
+fig.tight_layout()
+plt.show()
     
     
     
