@@ -1,23 +1,38 @@
 % use (slightly) more accurate averaging.
 % 300-500 eV, 2.481nm-4.136nm
 
-n = 2.481:.01:4.136;
-energies = [];
-x1 = [];
-x2 = [];
-x3 = [];
-for i = n
-    output = calceff(125,3,i);
-    x1 = [x1 output(2).eff4];
-    x2 = [x2 output(3).eff4];
-    x3 = [x3 output(4).eff4];
-    energies = [energies i];
+% Find out how one order changes with wavelength and number of strata in a
+% single plot, then compare it to existing values
+n = 2:.1:10;
+energies = zeros(length(n));
+x1 = zeros(1,length(n));
+x2 = zeros(1,length(n));
+x3 = zeros(1,length(n));
+for i = 1:length(n)
+    output = calceff(25,3,n(i));
+    try
+        x1(i) = output(2).eff4;
+    catch
+        x1(i) = 0;
+    end
+    try
+        x2(i) = output(3).eff4;
+    catch
+        x2(i) = 0;
+    end
+    try
+        x3(i) = output(4).eff4;
+    catch
+        x3(i) = 0;
+    end
+    energies(i) = n(i);
 end
-
+% sum = x1 + x2 + x3;
 plot(energies,x1,energies,x2,energies,x3)
 legend('1st Order','2nd Order','3rd Order')
 xlabel('Wavelength(nm)')
 ylabel('4th Efficiency')
+xlim([2.481 10])
 
 % Need to plot efficiency as a function of energy on the defined range
 % Plot multiple orders (0,1,2,3)
