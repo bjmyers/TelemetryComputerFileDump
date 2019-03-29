@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
-from tqdm import tqdm
 
 ## Functions
 
@@ -32,7 +31,25 @@ def fracture(posns,nearest=0.3):
     '''
     return np.round(posns / nearest) * nearest
 
+def findprobs(arr):
+    '''
+    Inputs an array, finds the abundance of each unique element. For example,
+    if arr contains the values 500 and 501, this finds the percentage of indexes
+    that contain 500 and the percentage of indexes that contain 501.
+    Output - formatted array of the form:
+    [(element1,prob),(element2,prob)...(elementn,prob)]
+    '''
+    l = len(arr)
+    elements = np.unique(arr)
+    output = []
 
+    for x in elements:
+        prob = np.count_nonzero(arr==x)/l
+        output.append((x,prob))
+    
+    return output
+    
+    
 '''
 To calculate the separation between grooves, use np.diff(posns)
 '''
@@ -50,117 +67,82 @@ outer_rad = 189.7
 
 ## Code:
 
-## Plots the number of unique separations at different propogation values
+
+## Plot average separation as a function of position
+# means = []
+# devs = []
 # indexes = np.arange(num)
 # posns = ((init_sep) * indexes).astype(np.float64)
 # isl = islope(posns,focus)
 # 
-# seps = []
-# n = 5000
-# for i in tqdm(range(n),desc='Propogating Grooves'):
-#     
-#     newposns = (fracture(posns))
-#     
-#     newposns = propagate(newposns, 0.3 * i, isl)
-#     
+# xs = np.arange(0,int(1e8),int(1e5))
+# for i in xs:
+#     newposns = propagate(posns,i*0.3,isl)
 #     newposns = fracture(newposns)
-#     sep = np.diff(newposns)
-#     
-#     sep = fracture(sep,0.1)
-#     
-#     seps.append(len(np.unique(sep)))
-# 
+#     means.append(np.mean(np.diff(newposns)))
+#     devs.append(np.std(np.diff(newposns)))
 # 
 # plt.figure()
-# plt.scatter(np.arange(n),np.array(seps))
+# plt.scatter(xs,means,c=devs)
+# plt.xlabel('Displacement (nm)')
+# plt.ylabel('Mean Separation (nm)')
+# plt.colorbar()
 # plt.show()
 
-## Plots the positions of the grooves over several propogation values
-# focus = 5e5
-# index = 100
-# posns = ((init_sep) * index)
-# isl = islope(posns,focus)
-# xs,ys = [],[]
-# noise = []
-# n = 1000
-# 
-# for i in range(n):
-#     newposns = propagate(posns, 0.3 * i, isl)
-#     
-#     noiseposn = newposns + np.random.normal(scale=.3)
-#     
-#     newposns = fracture(newposns)
-#     noiseposn = fracture(noiseposn)
-#     xs.append(newposns)
-#     ys.append(0.3 * i)
-#     noise.append(noiseposn)
-# 
-# 
-# plt.figure()
-# plt.scatter(noise,ys)
-# plt.scatter(xs,ys)
-# plt.show()
-    
-## Propogate the entire grating
+
+## Finds Period Distribution at each Position
 # indexes = np.arange(num)
 # posns = ((init_sep) * indexes).astype(np.float64)
 # isl = islope(posns,focus)
+# periods = []
 # 
-# newposns = posns
+# xs = np.arange(0,int(1e8),int(1e5))
+# for i in xs:
+#     newposns = propagate(posns,i*0.3,isl)
+#     newposns = fracture(newposns)
+#     p = fracture(np.diff(newposns))
+#     periods.append(findprobs(p))
 # 
-# newposns = propagate(newposns, 1e8, isl)
-# 
-# error = np.random.normal(30,5,(num))
-# newposns += error
-# 
-# newposns = fracture(newposns)
-# sep = np.diff(newposns)
-# 
-# 
-# plt.figure()
-# plt.hist(sep)
-# plt.show()
+#     
+# # Saves the two arrays to files:
+# np.save('positions',xs)
+# np.save('Probabilities',periods)
 
 
-## Plot average separation and standard deviation as a function of position
-sigma = 0  # Alter this value to change the noise value
-means = []  
-devs = [] 
-indexes = np.arange(num)
-posns = ((init_sep) * indexes).astype(np.float64)
-isl = islope(posns,focus)
+## Given a Position Array, Returns a Grating Period
+xs = np.load('positions.npy')
+periods = np.load('Probabilities.npy')
 
-xs = np.arange(0,int(1e8),int(1e5)).astype(np.float64)
-length = len(xs)
-for i in xs:
-    newposns = propagate(posns,i*0.3,isl)
-    newposns += np.random.normal(scale=sigma,size=length)
-    newposns = fracture(newposns)
-    means.append(np.mean(np.diff(newposns)))
-    devs.append(np.std(np.diff((newposns))))
+def gratPeriod(x):
+    indexes = np.searchsorted(xs,x)
+    selection = np.random.rand(len(x))
+    output = []
+    for i in range(len(x)):
+        if selection[i] < periods[i][0][1]:
+            output.append(periods[i][0][0])
+        else:
+            output.append(periods[i][1][0])
+    return output
 
-devs = np.array(devs)
-devs /= .3
-fig, ax1 = plt.subplots()
-ax1.scatter(xs,means)
-ax1.set_xlabel('Displacement (nm)')
-ax1.set_ylabel('Mean Separation (nm)')
-fig.tight_layout()
-plt.show()
-
-fig, ax1 = plt.subplots()
-ax1.scatter(xs,devs,color='r')
-ax1.set_ylabel('Standard Deviation of Separations (.3nm blocks)')
-ax1.set_xlabel('Displacement (nm)')
-
-fig.tight_layout()
-plt.show()
+def idealGratPeriod(x):
+    initial_sep = periods[0][0][0] * periods[0][0][1] + periods[0][1][0] * periods[0][1][1]
+    final_sep = periods[-1][0][0] * periods[-1][0][1] + periods[-1][1][0] * periods[-1][1][1]
+    sep_slope = (final_sep - initial_sep) / (xs[-1] - xs[0])
+    return ((x - xs[0]) * sep_slope) + initial_sep
 
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
