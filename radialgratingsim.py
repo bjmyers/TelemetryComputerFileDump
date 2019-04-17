@@ -91,37 +91,38 @@ outer_rad = 189.7
 
 
 ## Finds Period Distribution at each Position
-# indexes = np.arange(num)
-# posns = ((init_sep) * indexes).astype(np.float64)
-# isl = islope(posns,focus)
-# periods = []
-# 
-# xs = np.arange(0,int(1e8),int(1e5))
-# for i in xs:
-#     newposns = propagate(posns,i*0.3,isl)
-#     newposns = fracture(newposns)
-#     p = fracture(np.diff(newposns))
-#     periods.append(findprobs(p))
-# 
-#     
-# # Saves the two arrays to files:
-# np.save('positions',xs)
-# np.save('Probabilities',periods)
+indexes = np.arange(num)
+posns = ((init_sep) * indexes).astype(np.float64)
+isl = islope(posns,focus)
+periods = []
+
+xs = np.arange(0,int(1.1e8),int(1e5))
+for i in xs:
+    newposns = propagate(posns,i,isl)
+    newposns = fracture(newposns,.1)
+    p = fracture(np.diff(newposns),.1)
+    periods.append(findprobs(p))
+
+    
+# Saves the two arrays to files:
+np.save('positions_01',xs)
+np.save('Probabilities_01',periods)
 
 
 ## Given a Position Array, Returns a Grating Period
-xs = np.load('positions.npy')
-periods = np.load('Probabilities.npy')
+xs = np.load('positions_01.npy')
+periods = np.load('Probabilities_01.npy')
 
 def gratPeriod(x):
     indexes = np.searchsorted(xs,x)
+    indexes = np.where(indexes == len(indexes), indexes-1,indexes)
     selection = np.random.rand(len(x))
     output = []
     for i in range(len(x)):
-        if selection[i] < periods[i][0][1]:
-            output.append(periods[i][0][0])
+        if selection[i] < periods[indexes[i]][0][1]:
+            output.append(periods[indexes[i]][0][0])
         else:
-            output.append(periods[i][1][0])
+            output.append(periods[indexes[i]][1][0])
     return output
 
 def idealGratPeriod(x):
@@ -129,6 +130,15 @@ def idealGratPeriod(x):
     final_sep = periods[-1][0][0] * periods[-1][0][1] + periods[-1][1][0] * periods[-1][1][1]
     sep_slope = (final_sep - initial_sep) / (xs[-1] - xs[0])
     return ((x - xs[0]) * sep_slope) + initial_sep
+
+
+x = np.random.rand(1000) * 1e8
+# x = np.linspace(0,1e8,1000)
+ys = gratPeriod(x)
+
+plt.figure()
+plt.scatter(x,ys)
+plt.show()
 
 
 
