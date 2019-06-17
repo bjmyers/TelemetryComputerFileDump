@@ -3,47 +3,43 @@
 
 % Find out how one order changes with wavelength and number of strata in a
 % single plot, then compare it to existing values
-n = 2:.1:10;
-energies = zeros(length(n));
+n = 100:20:1200;
+waves = 1239.84193 ./ n;
+x0 = zeros(1,length(n));
 x1 = zeros(1,length(n));
 x2 = zeros(1,length(n));
 x3 = zeros(1,length(n));
+x4 = zeros(1,length(n));
+x5 = zeros(1,length(n));
+xtot = zeros(1,length(n));
 for i = 1:length(n)
-    output = calceff(25,3,n(i));
-    try
-        x1(i) = output(2).eff4;
-    catch
-        x1(i) = 0;
+    output = calceff(125,10,waves(i));
+    for j=1:length(output)
+        if output(j).m1 == 0
+            x0(i) = output(j).eff4;
+        elseif output(j).m1 == -1
+            x1(i) = output(j).eff4;
+        elseif output(j).m1 == -2
+            x2(i) = output(j).eff4;
+        elseif output(j).m1 == -3
+            x3(i) = output(j).eff4;
+        elseif output(j).m1 == -4
+            x4(i) = output(j).eff4;
+        elseif output(j).m1 == -5
+            x5(i) = output(j).eff4;
+        end
+        
     end
-    try
-        x2(i) = output(3).eff4;
-    catch
-        x2(i) = 0;
-    end
-    try
-        x3(i) = output(4).eff4;
-    catch
-        x3(i) = 0;
-    end
-    energies(i) = n(i);
+    xtot(i) = x1(i)+x2(i)+x3(i)+x4(i)+x5(i);
 end
-% sum = x1 + x2 + x3;
-plot(energies,x1,energies,x2,energies,x3)
-legend('1st Order','2nd Order','3rd Order')
-xlabel('Wavelength(nm)')
+plot(n,xtot,n,x0,n,x1,n,x2,n,x3,n,x4,n,x5)
+legend('Total','0th Order','1st Order','2nd Order','3rd Order','4th Order','5th Order')
+xlabel('Energy (eV)')
 ylabel('4th Efficiency')
-xlim([2.481 10])
+xlim([100 1200])
 
 % Need to plot efficiency as a function of energy on the defined range
 % Plot multiple orders (0,1,2,3)
-
-
-
-
-
-
-
-
 
 
 % n = 0;

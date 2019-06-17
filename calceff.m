@@ -5,8 +5,10 @@ function output = calceff(L1,m_max,wavelength)
     
     ctr_sect=true;
     % Define parameters for grating structure and incident field:
-    d=160;              % grating period (nm) - 160
-    blaze = 29.5;       
+    d=160;              % grating period (nm)
+%     d = 444.4444;
+    blaze = 29.5;    
+%     blaze = 4;
     %   Gold = 'Au'
     %   Silicon = 'Si'
     %   Nickel = 'Ni'
@@ -17,15 +19,20 @@ function output = calceff(L1,m_max,wavelength)
     grating_pmt=4.; % grating permittivity
 
     h=d.*tand(blaze); % grating height
-
-    % theta3 = angle between the grating lines (x3 axis) and the incident wave
-    % vector
-    theta3=2.5*pi/180;
-
+    
+    yaw = 0.85 * pi/180;
+    graze = 1.5 * pi/180;
+%     yaw = 1.07*pi/180;
+%     graze = 15*pi/180;
+ 
     % phi3 = angle between the grating normal (x1 axis) and the incident wave
     % vector's projection normal to the grating lines (i.e., x1, x2 plane
     % projection)
-    phi3=blaze;
+    phi3=atan(sin(yaw)/tan(graze));
+    
+    % theta3 = angle between the grating lines (x3 axis) and the incident wave
+    % vector
+    theta3=asin(sin(graze)/cos(phi3));
 
     %%
     if ctr_sect
