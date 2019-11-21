@@ -42,7 +42,7 @@ def split(pix, x, y, sigma, steps = 50):
     # Find the angle that once slice subtends
     arc = np.mean(np.diff(thetas) / (2*np.pi))
     
-    for i in tqdm(range(len(thetas))):
+    for i in range(len(thetas)):
         
         theta = thetas[i]
         costheta = np.cos(theta)
@@ -114,8 +114,16 @@ def split(pix, x, y, sigma, steps = 50):
             if (abs(r) > sigma*2.355):
                 break
     
-    # Normalize Gaussian
-    pix *= 2.6557942591411945
+    return pix
+
+def fast_split(pix, x, y, sigma, num = 50):
+    
+    xs = np.random.normal(loc=x,scale=sigma,size=num).astype(int)
+    ys = np.random.normal(loc=y,scale=sigma,size=num).astype(int)
+    
+    for i in range(num):
+        if (xs[i] > 0 and xs[i] < len(pix) and ys[i] > 0 and ys[i] < len(pix[0])):
+            pix[xs[i],ys[i]] += 1
     
     return pix
 
@@ -125,37 +133,66 @@ def gaussian(x, amp, cen, wid, const):
     return (amp / (np.sqrt(2*np.pi) * wid)) * np.exp(-(x-cen)**2 / (2*wid**2)) + const
 
 
-## Generating Data
+## Generating Basic Data
+
+# pix = np.zeros(shape=(1600,1600))
+# 
+# pix = split(pix,800.5,700.5,sigma=10,steps=100)
+# 
+# pix += np.random.normal(loc=0.0005,scale=0.00005,size=(1600,1600))
+# 
+# plt.figure()
+# plt.imshow(pix)
+# plt.show()
+
+## Generating Realistic Data
 
 pix = np.zeros(shape=(1600,1600))
 
-pix = split(pix,800.5,700.5,sigma=10,steps=200)
+# Make Real Event:
+pix = fast_split(pix,np.random.rand()*1600,np.random.rand()*1600,sigma=30,num=2000)
 
-pix += np.random.normal(loc=0.0005,scale=0.00005,size=(1600,1600))
+# Add between 1 and 6 false events
+for i in range(np.random.random_integers(1,6)):
+    pix = fast_split(pix,np.random.rand()*1600,np.random.rand()*1600,sigma=np.random.rand()*12+3,num=2000)
+
+# Add Hot Pixels
+for i in range(np.random.random_integers(1,3)):
+    pix[np.random.random_integers(1,1600),np.random.random_integers(1,1600)] += 15
+
+# Add Noise
+pix += np.random.normal(loc=.2,scale=0.1,size=(1600,1600))
 
 plt.figure()
 plt.imshow(pix)
 plt.show()
 
-## Fitting Data
-
-
 cols = pix.sum(axis=0)
 rows = pix.sum(axis=1)
 
-r = np.arange(1600)
-
-
-gmodel = lmfit.Model(gaussian)
-
-
-gx = gmodel.fit(cols,x=r,amp=np.max(cols),cen=710,wid=2,const = 0.01)
-
 plt.figure()
-plt.plot(r,cols,label='Data')
-plt.plot(r,gx.best_fit,label='Model')
-plt.legend()
+plt.plot(cols)
 plt.show()
+
+## Fitting Data
+
+
+# cols = pix.sum(axis=0)
+# rows = pix.sum(axis=1)
+# 
+# r = np.arange(1600)
+# 
+# 
+# gmodel = lmfit.Model(gaussian)
+# 
+# 
+# gx = gmodel.fit(cols,x=r,amp=np.max(cols),cen=710,wid=2,const = 0.01)
+# 
+# plt.figure()
+# plt.plot(r,cols,label='Data')
+# plt.plot(r,gx.best_fit,label='Model')
+# plt.legend()
+# plt.show()
 
 
 
