@@ -141,6 +141,21 @@ def parallelapprox(rays):
     
     ## Here, find the period experienced by each photon
     
+    # Find the segment in which each photon falls (0 designates a photon farthest from the focus)
+    seg = y // n
+    
+    # Reverse the order of the segments so that 0 designates a photon closest to the focus
+    seg = n - seg
+    
+    # Find the groove periods at the ends of the grating
+    # d0 is the groove period farthest from the focus (the maximum groove period)
+    d0 = dpermm * (grat.fdist.value + (grat.l/2).value)
+    # dn is the groove period closest to the focus (the minimum groove period)
+    dn = dpermm * (grat.fdist.value - (grat.l/2).value)
+    
+    # Calculate the groove period which each photon experiences
+    ds = dn + seg * ((dn-d0)/n)
+    
     # These next four lines find the period at the center given the period at the photon's position.
     x,y = grat.getPosns(rays)
     dist = np.sqrt(x**2 + (grat.fdist.value - y)**2)
@@ -192,8 +207,6 @@ snappedradial = True
 
 
 if (snappedradial):
-
-    grat.periodfunction = snappedpfunc
     
     grat = Grating(x=gratx, y=graty, z=gratz,
                 nx=0, ny=1, nz=0,
@@ -201,15 +214,17 @@ if (snappedradial):
                 d=d, radial=True, fdist=L,
                 l = 100*u.mm, w = 100*u.mm)
 
+    grat.periodfunction = snappedpfunc
+
 else:
-    
-    grat.periodfunction = parallelapprox
     
     grat = Grating(x=gratx, y=graty, z=gratz,
                 nx=0, ny=1, nz=0,
                 sx=0, sy=0, sz=-1,
                 d=d, radial=False, fdist=L,
                 l = 100*u.mm, w = 100*u.mm)
+    
+    grat.periodfunction = parallelapprox
 
 grat.pitch(g-fouralpha)
 grat.yaw(yaw)
@@ -222,20 +237,3 @@ rays.focusX()
 print('Spectral Resolution: ' + str(rays.spectralResolution()))
 
 rays.scatter2d()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
